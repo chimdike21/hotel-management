@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Hotel Management System</h1>
+    </header>
+
+
+    <main>
+        <!---user login section-->
+        <section id="login">
+            <h2>User Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!--booking page-->
+        <section id="booking" style="display:none">
+            <h2>Book a Room</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" required>
+                    <option value="single">Single - N15,000/night</option>
+                    <option value="double">Double - N30,000/night</option>
+                    <option value="suite">Suite - N70,000/night</option>
+                </select>
+                <label for="nights">Nights:</label>
+                <input type="number" id="nights" min="1" required>
+                <button type="submit">Book Now</button>
+            
+            </form>
+        </section>
+
+        <!--payment-->
+        <section id="payment" style="display:none">
+            <h2>Payment</h2>
+            <form id="payment-form">
+                <label for="cardName">Cardholder Name:</label>
+                <input type="text" id="cardName" required>
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" required>
+                <label for="expDate">Expiry Date</label>
+                <input type="text" id="expDate" placeholder="MM/YY"required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+    
+        <!--Admin-->
+        <section id="admin-dash" style="display:none">
+            <h2>Admin Dashboard</h2>
+            <button id="viewBookings">View All Bookings</button>
+            <ul id="bookingList"></ul>
+        </section>
+
+    </main>
+
+    
+<script src="index.js"></script>   
+</body>
+</html>
