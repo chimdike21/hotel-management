@@ -26,3 +26,16 @@ form label, form input, form select{
     width:100%;
     margin-bottom:10px;
 }
+
+button{
+    padding:10px;
+    background-color:#ccc;
+    border-radius: 15px;
+    border: solid 1px #ccc;
+    width:60px;
+    &:hover{
+        cursor:pointer;
+        background-color: #bbb;
+    
+    }
+} 
